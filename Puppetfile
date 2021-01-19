@@ -17,5 +17,5 @@ forge 'https://forge.puppet.com'
 #  branch: 'docs_experiment'
 
 mod 'review',
-  :git    => 'git@github.com:morgan-lillie/pp-control-repo/review.git',
+  :git    => 'git@github.com:morgan-lillie/pp-control-repo',
   :branch => 'production'
