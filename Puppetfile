@@ -18,4 +18,4 @@ forge 'https://forge.puppet.com'
 
 mod 'review',
   :git    => 'git@gitlab.classroom.puppet.com:puppet/review.git',
-  :branch => 'studentN'
+  :branch => 'production'
