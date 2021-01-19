@@ -20,13 +20,13 @@ class review (
     managehome => true,
       }
 
-file { "${homedir}/.bashrc":
-  ensure => file,
-  owner  => $user,
-  group  => $user,
-  mode   => '0644',
-  source => 'puppet:///modules/review/bashrc',
-}
+  file { "${homedir}/.bashrc":
+    ensure => file,
+    owner  => $user,
+    group  => $user,
+    mode   => '0644',
+    source => 'puppet:///modules/review/files/bashrc',
+  }
 
   service { 'puppet':
     ensure => stopped,
