@@ -22,4 +22,4 @@ mod 'review',
 
 mod 'system',
    :git => 'git@gitlab.classroom.puppet.com:puppet/system.git',
-   :branch => 'studentN'
+   :branch => 'production'
