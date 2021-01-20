@@ -12,7 +12,7 @@ define system::managed_user (
     default => "/home/${title}",
   }
 
-user { '$title':
+user { $title:
   ensure     => present,
   password   => $password,
   managehome => true,
