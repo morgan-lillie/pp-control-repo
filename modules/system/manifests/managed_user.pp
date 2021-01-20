@@ -25,7 +25,6 @@ if $facts['kernel'] == 'Linux' {
       group  => $title,
       mode   => '0644',
       source => 'puppet:///modules/system/bashrc',
-      echo   => 'Mischief Managed'
     }
   }
 }
