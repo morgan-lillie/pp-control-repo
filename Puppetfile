@@ -21,5 +21,5 @@ mod 'review',
   :branch => 'production'
 
 mod 'system',
-   :git => 'git@gitlab.classroom.puppet.com:puppet/system.git',
-   :branch => 'production'
+  :git    => 'git@github.com:morgan-lillie/pp-control-repo.git',
+  :branch => 'production'
