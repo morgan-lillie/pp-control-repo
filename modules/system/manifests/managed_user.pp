@@ -13,7 +13,7 @@ define system::managed_user (
   }
 
 user { '$title':
-  ensure     => 'present',
+  ensure     => present,
   password   => $password,
   managehome => true,
   }
