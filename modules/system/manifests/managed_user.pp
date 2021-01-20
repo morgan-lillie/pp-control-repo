@@ -13,9 +13,9 @@ define system::managed_user (
   }
 
 user { '$title':
-  ensure     => 'present'
-  password   => $password
-  managehome => true
+  ensure     => 'present',
+  password   => $password,
+  managehome => true,
   }
 
 if $facts['kernel'] == 'Linux' {
@@ -24,7 +24,7 @@ if $facts['kernel'] == 'Linux' {
       owner  => $title,
       group  => $title,
       mode   => '0644',
-      source => 'puppet:///modules/system/bashrc'
+      source => 'puppet:///modules/system/bashrc',
       echo   => 'Mischief Managed'
     }
   }
