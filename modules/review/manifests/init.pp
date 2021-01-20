@@ -25,7 +25,7 @@ class review (
     owner  => $user,
     group  => $user,
     mode   => '0644',
-    source => '/etc/puppetlabs/code/environments/production/modules/review/files/bashrc',
+    source => 'puppet:///modules/review/bashrc',
   }
 
   service { 'puppet':
